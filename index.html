@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/WhatsApp Image 2025-04-18 at 9.20.00 PM-removebg-preview.jpg" alt="Tushar Patil" width="40">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Tushar Patil</h1>
+
+          <p class="title">Full-Stack Devloper</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="tusharpatil11710@gmail.com" class="contact-link">tusharpatil11710@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="+91 9370726221" class="contact-link">+91 9370726221</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 19, 1998</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Pune, Maharashtra , India</address>
+            </div>
+
+          </li>
+
+          
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="cloud-download-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">
+                Resume Download
+                <a href="assets/images/Resume/TusharPatil_JavaDeveloper.pdf" download style="color: white; text-decoration: underline;">
+                  Click here to download
+                </a>
+              </p>
+
+        
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="www.linkedin.com/in/tushar-patil-a4b4b0266" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Full Stack Developer from India, specializing in building modern web applications using Java, Spring Boot, Microservices, and Angular. I focus on creating scalable, secure, and user-centric software solutions.
+          </p>
+      
+          <p>
+            On the backend, I work with Java and Spring Boot to develop robust RESTful APIs, implement microservices architecture, and ensure smooth communication between services. I also integrate with databases like MySQL and use tools like JWT for authentication and security.
+          </p>
+      
+          <p>
+            On the frontend, I use Angular to build responsive and interactive user interfaces that provide a seamless experience across devices. I enjoy crafting clean, efficient code and bringing ideas to life through full-stack development.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+        
+          <ul class="service-list">
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="backend icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+                <p class="service-item-text">
+                  Building robust and scalable RESTful APIs using Java, Spring Boot, and Microservices architecture.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="frontend icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frontend Development</h4>
+                <p class="service-item-text">
+                  Developing dynamic and responsive user interfaces with Angular for seamless user experience.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="integration icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Integration</h4>
+                <p class="service-item-text">
+                  Integrating front-end and back-end through secure API communication for complete full stack functionality.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="database icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Management</h4>
+                <p class="service-item-text">
+                  Designing and managing relational databases like MySQL with efficient query handling and data modeling.
+                </p>
+              </div>
+            </li>
+        
+          </ul>
+        
+        </section>
+        
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Tech Stack</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/java.svg" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Java & Spring Boot</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Expert in building enterprise-grade applications using Java and Spring Boot. Proficient in developing scalable
+                    REST APIs, integrating with databases, and following clean code principles and SOLID design patterns.
+            
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/security.svg" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Spring Security</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Implement secure authentication and authorization mechanisms using Spring Security, JWT tokens, role-based access,
+          and OAuth2 integration for protecting REST endpoints and user data.
+            
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/angular.svg" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Angular</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Developed dynamic and interactive single-page applications using Angular. Proficient with component-based
+          architecture, Angular Material, reactive forms, and state management with RxJS.
+     
+ 
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/html-5-svgrepo-com.svg" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>HTML, CSS & Bootstrap</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Skilled in crafting clean, responsive UI designs using HTML5, CSS3, and Bootstrap. Able to convert Figma/mockup
+          designs into pixel-perfect, mobile-friendly websites with interactive elements and transitions.
+
+     
+ 
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/linkerd-svgrepo-com.svg" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Microservices Communication</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Designed and developed microservices-based architecture using REST, Feign Client, Eureka for service discovery, 
+          and message brokers like Kafka and RabbitMQ for asynchronous communication between services.
+  
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/spring-boot-svgrepo-com.svg" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Spring Boot Actuator</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Implemented application monitoring using Spring Boot Actuator endpoints to track health, metrics, logging,
+                    environment properties, and custom health checks in production environments.
+          
+                  </p>
+                </div>
+
+              </div>  
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/github-code-source-svgrepo-com.svg" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Version Control (Git & GitHub)r</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Experienced in source code versioning with Git and GitHub. Skilled in using branches, pull requests,
+          merge strategies, and collaborating in a team using Git workflows.
+          
+                  </p>
+                </div>
+
+              </div>  
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/docker-svgrepo-com.svg" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Docker & Containerization</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Containerized applications using Docker to ensure consistent environments across development and production.
+                    Proficient in creating Dockerfiles and managing images and containers.
+          
+                  </p>
+                </div>
+
+              </div>  
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+
+        
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Tools & Platforms</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <!-- <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure> -->
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jenkins</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Experience in setting up CI/CD pipelines using Jenkins for automating build, test, and deployment processes. Integrated with GitHub and Docker for end-to-end DevOps workflows.
+
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <!-- <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure> -->
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Swagger / OpenAPI</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Utilized Swagger for documenting and testing RESTful APIs, improving developer collaboration and simplifying API consumption in front-end applications.
+  
+            
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <!-- <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure> -->
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>AWS</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Experience deploying applications using AWS EC2, RDS, S3, and CloudWatch. Skilled in managing scalable cloud infrastructure with a strong understanding of IAM and networking.
+     
+ 
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <!-- <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure> -->
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Google Cloud Platform (GCP)</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Hands-on with deploying and monitoring applications on GCP using services like App Engine, Cloud SQL, and Firebase. Experience with role-based permissions and storage solutions.
+
+     
+ 
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <!-- <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure> -->
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Grafana</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Used Grafana for building real-time, interactive dashboards to visualize application metrics and logs. Integrated with Prometheus and Spring Boot Actuator for monitoring services and microservices.
+  
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <!-- <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure> -->
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Spring Boot Actuator</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Implemented application monitoring using Spring Boot Actuator endpoints to track health, metrics, logging,
+                    environment properties, and custom health checks in production environments.
+          
+                  </p>
+                </div>
+
+              </div>  
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <!-- <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure> -->
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Version Control (Git & GitHub)r</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Experienced in source code versioning with Git and GitHub. Skilled in using branches, pull requests,
+          merge strategies, and collaborating in a team using Git workflows.
+          
+                  </p>
+                </div>
+
+              </div>  
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <!-- <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure> -->
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Docker & Containerization</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Containerized applications using Docker to ensure consistent environments across development and production.
+                    Proficient in creating Dockerfiles and managing images and containers.
+          
+                  </p>
+                </div>
+
+              </div>  
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+        
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">KBCNMU(Shri. Gulabrao Deokar College of Engineering, Jalgaon)</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+               BACHELORS OF ENGINEERING IN COMPUTER ENGINEERING
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">MSBTE(Matoshri Institute of Technology, Yeola)</h4>
+
+              <span>2016 — 2019</span>
+
+              <p class="timeline-text">
+                DIPLOMA IN COMPUTER ENGINEERING
+              </p>
+
+            </li>
+
+  
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Full Stack Devloper</h4>
+
+              <span>July 2023 — Present</span>  
+
+              <p class="timeline-text">
+                Techno Growth Software Solutions Pvt. Ltd., Pune, India.
+              </p>
+
+              <p class="timeline-text">
+                Worked as a Full-Stack Developer using Angular for frontend and Spring Boot for backend. Built RESTful APIs using Spring Boot, Hibernate, and MySQL. Designed and optimized database schemas for better performance. 
+                Implemented JWT-based authentication for secure access. Integrated Kafka and RabbitMQ for asynchronous microservices communication. Used RestTemplate and FeignClient for synchronous inter-service communication. Utilized Postman and Swagger for API testing and documentation. Worked in a Scrum-based team, participating in sprint planning, daily stand-ups, and retrospectives.
+              </p>
+
+            </li>
+
+          
+          </ol>
+
+        </section>
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+        
+          <ul class="skills-list content-card">
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Java (Core & Advanced)</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Spring Boot & Hibernate</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">RESTful APIs & Microservices</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Angular & TypeScript</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">MySQL & SQL</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Kafka & RabbitMQ</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Postman & Swagger</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Git & CI/CD</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+        
+          </ul>
+        
+        </section>
+        
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Frontend development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Backend Development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Full-Stack Development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Company Projects</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Frontend development</button>
+              </li>
+             
+
+              <li class="select-item">
+                <button data-select-item>Backend Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Full-Stack Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Company Projects</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="frontend development">
+              <a href="https://tusharp1171.github.io/Airtech-Ecosystem">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/airtech-ecosystem.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Airtech Ecosystem</h3>
+
+                <p class="project-category">Frontend Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="full-stack development">
+              <a href="https://github.com/tusharp1171/Burger-Hut">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/burger-hut.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Burger Hut</h3>
+
+                <p class="project-category">Full-Stack Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="full-stack development">
+              <a href="https://github.com/tusharp1171/hotel-reservation-system">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Hotel.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hotel Reservation System</h3>
+
+                <p class="project-category">Full-Stack Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="company projects">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt="Wellington Motor Freight" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"> Wellington Motor Freight (TMS - Transportation Management System) </h3>
+
+                <p class="project-category">Backend Development</p>
+
+              </a>
+            </li>
+
+              <li class="project-item  active" data-filter-item data-category="company projects">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="" alt=" ISKCON - Govardhan Eco Village, Mumbai " loading="lazy">
+                </figure>
+
+                <h3 class="project-title">  ISKCON - Govardhan Eco Village, Mumbai  </h3>
+
+                <p class="project-category">Backend Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="full-stack development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/employee.png" alt=" I Employee Management System – CRUD Application " loading="lazy">
+                </figure>
+
+                <h3 class="project-title">   Employee Management System – CRUD Application  </h3>
+
+                <p class="project-category">Full-Stack Development</p>
+
+              </a>
+            </li>
+
+
+
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+     
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609988008!2d72.74109997609546!3d19.082197839290956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63d8d7d9e0f%3A0x57c87dd8b106ef75!2sIndia!5e0!3m2!1sen!2sin!4v1713177332222!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
